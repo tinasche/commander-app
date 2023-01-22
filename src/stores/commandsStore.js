@@ -1,7 +1,8 @@
 import { defineStore } from "pinia";
 import axios  from "axios";
 
-axios.defaults.baseURL = "https://localhost:7188/api/Commands"
+// axios.defaults.baseURL = "https://localhost:7188/api/Commands" 
+axios.defaults.baseURL = "https://comverse.azurewebsites.net/api/Commands" 
 
 export const useCommandsStore = defineStore("commandsStore", {
   state: () => ({
